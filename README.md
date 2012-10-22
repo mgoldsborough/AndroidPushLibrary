@@ -6,12 +6,12 @@ Android library and demo for receiving push notifications from https://www.AppDe
 Usage
 -----
 	
-	1. Import AndroidPushLibrary into Eclipse.
-	2. Right click on your Android project and select 'Properties'.
-	3. Click 'Android'.
-	4. Under the 'Libraries' section click 'Add...'.  
-	5. Select 'AndroidPushLibrary' and click 'Ok'. Click 'Ok' to close the properties window.
-	6. Add the following to you AndroidManifest.xml file:
+1. Import AndroidPushLibrary into Eclipse.
+2. Right click on your Android project and select 'Properties'.
+3. Click 'Android'.
+4. Under the 'Libraries' section click 'Add...'.  
+5. Select 'AndroidPushLibrary' and click 'Ok'. Click 'Ok' to close the properties window.
+6. Add the following to you AndroidManifest.xml file:
 	
 ```xml
 <manifest>
@@ -23,7 +23,6 @@ Usage
 	
 	<application>
 		<!-- Other activites and services -->
-		// Other activities and services...
 		
 		<service
 			android:name="com.appdevkit.push.PushService"
@@ -40,7 +39,7 @@ Usage
 </manifest>
 ```
 
-	7. In your res/values folder create a new xml file named 'adk.xml' and add the following contents.  NOTE: Be sure to update the 'adk_channel_name' field with the channel name generated for you app on AppDevKit.com.
+7. In your res/values folder create a new xml file named 'adk.xml' and add the following contents.  NOTE: Be sure to update the 'adk_channel_name' field with the channel name generated for you app on AppDevKit.com.
 
 ```xml
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
@@ -51,7 +50,7 @@ Usage
 </resources>
 ```
 
-	8. In your main activity, create a new android.os.Handler object.  This will receive the push notification messages from the PushService.
+8. In your main activity, create a new android.os.Handler object.  This will receive the push notification messages from the PushService.
 	
 ```java
 private Handler handler = new Handler() {
@@ -70,7 +69,7 @@ private Handler handler = new Handler() {
 };
 ```
 
-	9. Also in your main activity, create a new android.content.ServiceConnection object.  This will allow you to register the handler with the service.
+9. Also in your main activity, create a new android.content.ServiceConnection object.  This will allow you to register the handler with the service.
 	
 ```java
 private ServiceConnection svcConn = new ServiceConnection() {
@@ -88,7 +87,7 @@ private ServiceConnection svcConn = new ServiceConnection() {
 };
 ```
 
-	10. When your application starts, bind to the PushService in the onCreate(Bundle) method.  Unregister the handler and unbind to the Push service in the onDestroy() method.
+10. When your application starts, bind to the PushService in the onCreate(Bundle) method.  Unregister the handler and unbind to the Push service in the onDestroy() method.
 	
 ```java
 @Override
@@ -114,7 +113,7 @@ public void onDestroy() {
 }
 ```
 
-	11. That's it!  When you send a 'Push' from AppDevKit.com the PushService will receive it and pass it to your handler.  This allows you to handle it however you'd like.
+That's it!  Now when you send a 'Push' from AppDevKit.com the PushService will receive it and pass it to your handler.  This allows you to handle it however you'd like.
 
 API Documentation
 -----------------
