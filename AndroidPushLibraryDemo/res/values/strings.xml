@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">AndroidPushLibraryDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_push_demo">PushDemo</string>
+	<string name="adk_channel_name">81568b0b-a297-4c67-8ff9-a71c9b442f11</string>
+</resources>

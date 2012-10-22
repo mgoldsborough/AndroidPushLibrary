@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    <string name="adk_subscriber_key"></string>
+  	<string name="adk_channel_name"></string>
+</resources>

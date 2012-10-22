@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+	<!-- ADK Production subscription key -->
+    <string name="adk_subscriber_key">sub-c-20cd0eb0-1b7c-11e2-8d2e-15ce9941f8cb</string>
+    <!-- ADK App Channel Name -->
+  	<string name="adk_channel_name">UPDATE-TO-YOUR-CHANNEL-NAME</string>
+</resources>
